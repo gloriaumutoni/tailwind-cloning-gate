@@ -11,7 +11,7 @@
     <!-- container -->
 
     <!-- nav1 -->
-    <div class="bg-[#333333] py-1">
+    <div class="hidden lg:block sm:bg-[#333333] sm:py-1">
 
         <div class="w-[85%] mx-auto flex justify-between  text-white items-center">
             <div class="flex gap-4">
@@ -42,16 +42,26 @@
 
 <!-- nav2 -->
 <div class="bg-[#D5D5D5] py-6 sticky top-0" >
+    
     <div class="w-[85%] flex mx-auto gap-20 items-center">
-    <img class="h-10" src="./src/logo.svg" alt="">
-        <div class="font-bold text-xl flex gap-10">
+
+        <div class="flex gap-4 items-center justify-between">
+            <i class=" text-2xl lg:hidden fa-light fa-bars"></i>
+            <div class="flex gap-4 ">
+                <img class="h-8 lg:h-10" src="./src/logo.svg" alt="">
+                <i class="text-2xl lg:hidden fa-solid fa-bars-sort"></i>
+            </div>
+           
+        </div>
+    
+        <div class="hidden lg:font-bold lg:text-xl lg:flex gap-10">
             <h1>STUDY</h1>
             <h1>RESEARCH</h1>
             <h1>INNOVATE</h1>
             <h1>LIVE</h1>
             <h1>EXPLORE</h1>
         </div>
-        <div class="flex">
+        <div class="hidden lg:flex">
             <input type="text" class="bg-[#D5D5D5] relative border-b border-black text-black" placeholder="Search">
             <i class="absolute right-14 fa-solid fa-magnifying-glass"></i>
         </div>
@@ -62,10 +72,10 @@
 <!-- main -->
 <div>
     <div class="relative h-[85vh] bg-no-repeat bg-cover bg-center bg-[url('https://www.up.pt/portal/media/images/ijup-2024_12.format-jpeg.jpg')]">
-        <div class="absolute bottom-10 left-28 bg-[#353535d7] text-white py-4 px-5">
+        <div class="absolute bottom-0 sm:bottom-10 sm:left-28 bg-[#353535d7] text-white py-4 px-5">
             <h1 class="text-2xl font-medium pb-5">IJUP 2024: new talents in science reveal <br> themselves at U.PORTO</h1>
-            <p class="">More than 1,000 students are taking part in the 17th U.PORTO</p>
-            <p class="pb-5">Youth Research Meeting from 8 to 10 May</p>
+            <p class=" hidden sm:block">More than 1,000 students are taking part in the 17th U.PORTO</p>
+            <p class=" hidden sm:block pb-5">Youth Research Meeting from 8 to 10 May</p>
             <a  class="bg-[#A18A4D] py-1 px-2 text-[#3E4143] font-medium" href="#">See More</a>
         </div>
 
@@ -75,16 +85,16 @@
 <!-- study  -->
 <div class="w-[85%] mx-auto pt-20">
     <h1 class="text-6xl font-extralight text-[#A18A4D] pb-10 ">Study</h1>
-    <div class="text-[#333333] flex justify-between">
+    <div class="flex-wrap sm:flex-nowrap  text-[#333333] flex justify-between">
         <h1 class="text-3xl font-medium"> Your future is here! </h1>
-        <p class="w-[64%] font-extralight text-xl">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
+        <p class=" pt-6 sm:pt-0 sm:w-[64%] font-extralight text-xl">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
     </div>
 </div>
 
 <!-- course -->
 <div class="w-[85%] mx-auto py-20">
     <h1 class="text-[#333333] text-3xl font-medium pb-3">Which course are you looking for?</h1>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid  grid-cols-1 xl:grid-cols-3 gap-6">
         <div class="col-span-2">
             <div class="flex flex-col gap-4">
                 <input class="border-2 border-[#333333] text-lg pl-4 py-3 font-bold" type="text" placeholder="All">
@@ -94,7 +104,7 @@
         </div>
        
 
-        <div class="col-span-1 ">
+        <div class=" pt-3 sm:pt-0 sm:col-span-1 ">
             <div class="flex flex-col text-2xl text-[#333333] ">
                 <h1 >Courses from A to Z:</h1>
                 <a class="underline" href="#">Bachelor's and Integrated Master’s Degrees</a>
@@ -109,9 +119,9 @@
 <!-- News -->
 <div class="bg-[#F2F2F2]">
 <div class=" w-[85%] mx-auto">
-<div class="flex justify-between py-16 items-center">
+<div class="flex flex-col sm:flex-row sm:justify-between py-16 sm:items-center">
     <h1 class="text-6xl font-extralight text-[#A18A4D] ">News</h1>
-    <div class="flex items-center gap-4 text-[#A18A4D] font-bold text-lg">
+    <div class="flex pt-4 sm:pt-0 items-center gap-4 text-[#A18A4D] font-bold text-lg">
         <h1>All news</h1>
         <i class=" fa-solid fa-circle-chevron-right"></i>
     </div>
@@ -119,7 +129,7 @@
 
 <!--cards -->
 
-    <div class=" grid grid-cols-3 gap-8">
+    <div class=" grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- card1 -->
         <div class="bg-white">
             <div class="p-6">
@@ -132,7 +142,7 @@
         </div>
 
         <!-- card2 -->
-        <div class="bg-white">
+        <div class="hidden md:block bg-white">
             <div class="p-6">
                 <p class="text-[#A18A4D] pb-5 text-lg">Desporto</p>
                 <h1 class="text-xl font-bold text-[#333333] pb-20">U.Porto vai organizar Europeu <br> Universitario de Futebol em 2027</h1>
@@ -143,7 +153,7 @@
         </div>
 
         <!-- card3 -->
-        <div class="bg-white">
+        <div class="hidden sm:block bg-white">
             <div class="p-6">
                 <p class="text-[#A18A4D] pb-5 text-lg">Desporto</p>
                 <h1 class="text-xl font-bold text-[#333333] pb-20">U.Porto vai organizar Europeu <br> Universitario de Futebol em 2027</h1>
@@ -165,11 +175,14 @@
 
 <!-- university excellence -->
 <div class="w-[85%] mx-auto py-10">
-    <div class="grid grid-cols-2 pt-20">
-        <div class="relative bg-[url('https://www.up.pt/portal/static/images/minerva_01.png')] bg-center h-[60vh] bg-no-repeat">
+    <div class="grid grid-cols-1 lg:grid-cols-2 pt-20">
+        <div class="relative hidden lg:block sm:bg-[url('https://www.up.pt/portal/static/images/minerva_01.png')] bg-center h-[60vh] bg-no-repeat">
             <div class="absolute top-0 text-[#A18A4D] pb-5 text-5xl font-light w-[45%]">
                 <h1 class="">We are a University of Excellence!</h1>
             </div>
+        </div>
+        <div class="lg:hidden text-[#A18A4D] pb-5 text-4xl font-light ">
+            <h1 class="">We are a University of Excellence!</h1>
         </div>
 
         <div>
@@ -191,7 +204,7 @@
 <div class="w-[85%] mx-auto py-20">
     <h1 class="text-[#A18A4D] font-light text-5xl pb-10">Research</h1>
 
-    <div class="flex gap-10">
+    <div class="flex flex-wrap xl:flex-nowrap xl:gap-10">
         <div>
             <h1 class="text-[#333333] text-3xl font-medium pb-6">Research University</h1>
             <p class="pb-4 text-xl font-light ">With <span class="text-[#A18A4D]">48 research units</span>  and a highly qualified scientific community, the University of Porto is <span class="text-[#333333] font-medium">one of the largest producers of science in Portugal,</span> contributing to almost <span class="text-[#A18A4D]">25% of all national scientific output</span> .</p>
@@ -221,7 +234,7 @@
         </div>
 
         <!-- div2 -->
-        <div class="text-4xl text-center">
+        <div class=" text-3xl sm:text-4xl text-center">
             <h1 class="font-medium pt-14">U.PORTO IN FIGURES</h1>
             <h1 class="font-extralight pt-2 pb-10">2022/2023</h1>
         </div>
@@ -229,23 +242,23 @@
         <div class="bg-white border-b border-white"></div>
 
         <!-- div3 -->
-        <div class="flex pt-10 pb-10 justify-between">
+        <div class="flex flex-col sm:flex-row pt-10 pb-10 sm:justify-between">
             <!-- card1 -->
-            <div class="flex flex-col ">
-                <h1 class="text-5xl font-bold">+300</h1>
-                <h1 class="text-4xl font-extralight">Courses</h1>
+            <div class="flex flex-col text-center ">
+                <h1 class=" text-4xl sm:text-5xl font-bold">+300</h1>
+                <h1 class=" text-3xl sm:text-4xl font-extralight">Courses</h1>
             </div>
             
             <!-- card2 -->
-            <div class="flex flex-col text-center">
-                <h1 class="text-5xl font-bold">+35.000</h1>
-                <h1 class="text-4xl font-extralight">Student enrolled</h1>
+            <div class="flex pt-8 sm:pt-0 flex-col text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold">+35.000</h1>
+                <h1 class="text-3xl sm:text-4xl font-extralight">Student enrolled</h1>
             </div>
 
             <!-- card3 -->
-            <div class="flex flex-col text-center">
-                <h1 class="text-5xl font-bold">+48</h1>
-                <h1 class="text-4xl font-extralight">Research Units</h1>
+            <div class="flex pt-8 sm:pt-0 flex-col text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold">+48</h1>
+                <h1 class="text-3xl sm:text-4xl font-extralight">Research Units</h1>
             </div>
 
         </div>
@@ -254,8 +267,15 @@
 
 <!-- frequent asked question -->
 <div class="w-[85%] mx-auto py-10">
-    <h1 class="text-5xl text-[#A18A4D]  pt-10 pb-10">Frequently asked questions</h1>
-    <div class="flex text-xl gap-5 pb-4 font-medium">
+    <h1 class="text-4xl sm:text-5xl text-[#A18A4D]  pt-10 pb-10">Frequently asked questions</h1>
+<select class="lg:hidden  w-full border-2 border-[#333333] text-lg pl-4 py-3">
+    <option selected >International Students</option>
+    <option >Prospective Students</option>
+    <option >Proffessionals</option>
+    <option >Alumni</option>
+    <option >U.Porto Students</option>
+</select>
+    <div class=" hidden lg:flex text-xl gap-5 pb-4 font-medium">
         <h1 class="text-black">International Students</h1>
         <h1 class="text-gray-500">Prospective Students</h1>
         <h1 class="text-gray-500">Proffessionals</h1>
@@ -263,10 +283,10 @@
         <h1 class="text-gray-500">U.Porto Students</h1>
     </div>
 
-    <div class="border-b border-gray-400"></div>
+    <div class="lg:border-b border-gray-400"></div>
 
     <!--  -->
-    <div class="flex gap-6 pt-12">
+    <div class="flex flex-col-reverse sm:flex-row gap-6 pt-12">
 
         <div>
             <h1 class="text-[#333333] text-3xl py-6 font-bold">International Students</h1>
@@ -293,7 +313,7 @@
 <div class="bg-[#333333] py-10 flex">
 <img class=" absolute z-10 transform scale-x-[-1] h-[82vh]"  src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
     <div class="w-[85%] z-20 mx-auto pt-20 pl-6">
-<div class="grid grid-cols-5 grid-rows-5 gap-4 text-sm text-white">
+<div class="grid grid-cols-1 sm:grid-cols-5 sm:grid-rows-5 gap-4 text-sm text-white">
     <div class="row-span-2 text-[#A18A4D]">
         <h1>Media</h1>
     </div>
@@ -339,7 +359,7 @@
     <!-- line -->
     <div class="border-b border-gray-400 py-6"></div>
 
-    <div class="flex justify-between pt-8 text-white">
+    <div class="flex flex-col pt-8 sm:pt-0 sm:flex-row sm:justify-between text-white">
         
             <div class="flex gap-4 text-lg">
                 <i class="fa-solid fa-newspaper"></i>
@@ -365,14 +385,17 @@
 
     </div>
 
-    <div class="text-white flex gap-4">
+    <div class="text-white flex flex-col pt-8 sm:pt-0 sm:flex-row gap-4">
         <h1>© University of Porto 2024 </h1>
         <h1 class="hover:underline cursor-pointer">Personal Data Protection </h1>
         <h1 class="hover:underline cursor-pointer">Privacy Policy </h1>
         <h1 class="hover:underline cursor-pointer">Accessibility</h1>
     </div>
 </div>
+
+
 </div>
+
 
     </div>
     
