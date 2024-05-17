@@ -855,6 +855,14 @@ video {
   max-width: 1440px;
 }
 
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
+.max-w-\[85\%\] {
+  max-width: 85%;
+}
+
 .origin-top-right {
   transform-origin: top right;
 }
