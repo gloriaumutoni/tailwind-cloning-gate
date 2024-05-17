@@ -45,15 +45,16 @@
     
     <div class="w-[85%] flex mx-auto gap-20 items-center">
 
-        <div class="flex gap-4 items-center justify-between">
+        <div class="flex gap-4 lg:hidden items-center justify-between">
             <i class=" text-2xl lg:hidden fa-light fa-bars"></i>
+            <img class="h-8 lg:h-10" src="./src/logo.svg" alt="">
             <div class="flex gap-4 ">
-                <img class="h-8 lg:h-10" src="./src/logo.svg" alt="">
                 <i class="text-2xl lg:hidden fa-solid fa-bars-sort"></i>
             </div>
            
         </div>
     
+        <img class="hidden lg:block h-10" src="./src/logo.svg" alt="">
         <div class="hidden lg:font-bold lg:text-xl lg:flex gap-10">
             <h1>STUDY</h1>
             <h1>RESEARCH</h1>
@@ -85,9 +86,9 @@
 <!-- study  -->
 <div class="w-[85%] mx-auto pt-20">
     <h1 class="text-6xl font-extralight text-[#A18A4D] pb-10 ">Study</h1>
-    <div class="flex-wrap sm:flex-nowrap  text-[#333333] flex justify-between">
+    <div class="flex-wrap lg:flex-nowrap  text-[#333333] flex justify-between">
         <h1 class="text-3xl font-medium"> Your future is here! </h1>
-        <p class=" pt-6 sm:pt-0 sm:w-[64%] font-extralight text-xl">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
+        <p class=" pt-6 lg:pt-0 lg:w-[64%] font-extralight text-xl">Gathering the most complete offer of training programmes in Portugal, the 14 faculties of the U.Porto offer unique conditions to those who want to build an academic path of excellence and properly valued by the labour market.</p>
     </div>
 </div>
 
@@ -96,8 +97,13 @@
     <h1 class="text-[#333333] text-3xl font-medium pb-3">Which course are you looking for?</h1>
     <div class="grid  grid-cols-1 xl:grid-cols-3 gap-6">
         <div class="col-span-2">
-            <div class="flex flex-col gap-4">
-                <input class="border-2 border-[#333333] text-lg pl-4 py-3 font-bold" type="text" placeholder="All">
+            <div class="flex flex-col gap-4 pt-3">
+                <select class=" border-2 border-[#333333] text-lg px-4 py-3 font-medium">
+                    <option selected >All</option>
+                    <option >Bachelor's and Integrated Master’s Degrees</option>
+                    <option >Master’s Degrees</option>
+                    <option >Doctorates</option>
+                </select>
                 <input class="border-2 border-[#333333] text-lg pl-4 py-3" type="text" placeholder="Please enter course keywords...">
                 <a class="text-white text-center bg-[#A18A4D] text-xl font-medium py-2" href="#">Search</a>
             </div>
@@ -129,7 +135,7 @@
 
 <!--cards -->
 
-    <div class=" grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- card1 -->
         <div class="bg-white">
             <div class="p-6">
@@ -153,7 +159,7 @@
         </div>
 
         <!-- card3 -->
-        <div class="hidden sm:block bg-white">
+        <div class="hidden lg:block bg-white">
             <div class="p-6">
                 <p class="text-[#A18A4D] pb-5 text-lg">Desporto</p>
                 <h1 class="text-xl font-bold text-[#333333] pb-20">U.Porto vai organizar Europeu <br> Universitario de Futebol em 2027</h1>
@@ -313,86 +319,104 @@
 <div class="bg-[#333333] py-10 flex">
 <img class=" absolute z-10 transform scale-x-[-1] h-[82vh]"  src="https://www.up.pt/portal/static/images/minerva_01.png" alt="">
     <div class="w-[85%] z-20 mx-auto pt-20 pl-6">
-<div class="grid grid-cols-1 sm:grid-cols-5 sm:grid-rows-5 gap-4 text-sm text-white">
-    <div class="row-span-2 text-[#A18A4D]">
-        <h1>Media</h1>
-    </div>
-    <div class="row-span-3 col-start-1 row-start-3 text-[#A18A4D]">
-        <h1>U.Porto Portals</h1>
-    </div>
-    <div class="col-start-2 row-start-1">
-        <h1>U.Porto News</h1>
-    </div>
-    <div class="col-start-3 row-start-1 hover:underline cursor-pointer">
-        <h1>U.Porto Agenda</h1>
-    </div>
-    <div class="col-start-4 row-start-1 hover:underline cursor-pointer">
-        <h1>Media Contacts</h1>
-    </div>
-    <div class="col-start-4 row-start-2 hover:underline cursor-pointer"></div>
-    <div class="col-start-5 row-start-1 hover:underline cursor-pointer">
-       <h1> Image Manual</h1>
-    </div>
-    <div class="col-start-2 row-start-2 hover:underline cursor-pointer">
-        <h1>CDUP - U.Porto Sports Centre</h1>
-    </div>
-    <div class="col-start-3 row-start-2 "></div>
-    <div class="col-start-5 row-start-2"></div>
-    <div class="row-start-3 hover:underline cursor-pointer"><h1>CDUP - U.Porto Sports Centre</h1> </div>
-    <div class="row-start-3 hover:underline cursor-pointer">
-        <h1>Social Support Services of the University of Porto (SASUP)</h1>
-    </div>
-    <div class="row-start-3 hover:underline cursor-pointer">
-        <h1>Former Students Portal</h1>
-    </div>
-    <div class="row-start-3 hover:underline cursor-pointer"><h1>UPdigital Portal</h1></div>
-    <div class="col-start-2 hover:underline cursor-pointer"><h1>CDUP - U.Porto Sports Centre</h1></div>
-    <div class="col-start-3 hover:underline cursor-pointer">Educational Innovation</div>
-    <div class="col-start-4 hover:underline cursor-pointer">Peer Mentoring</div>
-    <div class="col-start-5 hover:underline cursor-pointer">AcademiaUP</div>
-    <div class="col-start-2 row-start-5 hover:underline cursor-pointer"><h1>U.Porto Innovation</h1></div>
-    <div class="col-start-3 row-start-5 hover:underline cursor-pointer"><h1>Complaints Portal</h1></div>
-    <div class="col-start-4 row-start-5 hover:underline cursor-pointer"><h1>Documentation and Information Services and Resources (SRDI)</h1></div>
-    <div class="col-start-5 row-start-5 hover:underline cursor-pointer"><h1>SIGARRA U.Porto</h1></div>
-</div>
-
-    <!-- line -->
-    <div class="border-b border-gray-400 py-6"></div>
-
-    <div class="flex flex-col pt-8 sm:pt-0 sm:flex-row sm:justify-between text-white">
-        
-            <div class="flex gap-4 text-lg">
-                <i class="fa-solid fa-newspaper"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class=" fa-brands fa-facebook-f"></i>
+        <div class="grid grid-cols-1 sm:grid-cols-5 sm:grid-rows-5 gap-4 text-sm">
+            <div class="sm:row-span-2 text-[#A18A4D]">
+              <h1>Media</h1>
             </div>
-        
-        <div>
-            <h1>Contacts</h1>
-            <p class="pt-2">Reitoria da Universidade do Porto</p>
-            <div class="pt-3">
+            <div class="sm:row-span-3 sm:col-span-1 sm:row-start-3 text-[#A18A4D]">
+              <h1>U.Porto Portals</h1>
+            </div>
+            <div class="sm:col-start-2 sm:row-start-1 text-white">
+              <h1>U.Porto News</h1>
+            </div>
+            <div class="sm:col-start-3 sm:row-start-1 text-white hover:underline cursor-pointer">
+              <h1>U.Porto Agenda</h1>
+            </div>
+            <div class="sm:col-start-4 sm:row-start-1 text-white hover:underline cursor-pointer">
+              <h1>Media Contacts</h1>
+            </div>
+            <div class="sm:col-start-5 sm:row-start-1 text-white hover:underline cursor-pointer">
+              <h1>Image Manual</h1>
+            </div>
+            <div class="sm:col-start-2 sm:row-start-2 text-white hover:underline cursor-pointer">
+              <h1>CDUP - U.Porto Sports Centre</h1>
+            </div>
+            <div class="sm:col-start-3 sm:row-start-2 text-white"></div>
+            <div class="sm:col-start-4 sm:row-start-2 text-white hover:underline cursor-pointer"></div>
+            <div class="sm:col-start-5 sm:row-start-2 text-white"></div>
+            <div class="sm:col-span-1 sm:row-start-3 text-white hover:underline cursor-pointer">
+              <h1>CDUP - U.Porto Sports Centre</h1>
+            </div>
+            <div class="sm:col-span-1 sm:row-start-3 text-white hover:underline cursor-pointer">
+              <h1>Social Support Services of the University of Porto (SASUP)</h1>
+            </div>
+            <div class="sm:col-span-1 sm:row-start-3 text-white hover:underline cursor-pointer">
+              <h1>Former Students Portal</h1>
+            </div>
+            <div class="sm:col-span-1 sm:row-start-3 text-white hover:underline cursor-pointer">
+              <h1>UPdigital Portal</h1>
+            </div>
+            <div class="sm:col-start-2 text-white hover:underline cursor-pointer">
+              <h1>CDUP - U.Porto Sports Centre</h1>
+            </div>
+            <div class="sm:col-start-3 text-white hover:underline cursor-pointer">
+              <h1>Educational Innovation</h1>
+            </div>
+            <div class="sm:col-start-4 text-white hover:underline cursor-pointer">
+              <h1>Peer Mentoring</h1>
+            </div>
+            <div class="sm:col-start-5 text-white hover:underline cursor-pointer">
+              <h1>AcademiaUP</h1>
+            </div>
+            <div class="sm:col-start-2 text-white  sm:row-start-5 hover:underline cursor-pointer">
+              <h1>U.Porto Innovation</h1>
+            </div>
+            <div class="sm:col-start-3 text-white sm:row-start-5 hover:underline cursor-pointer">
+              <h1>Complaints Portal</h1>
+            </div>
+            <div class="sm:col-start-4 text-white sm:row-start-5 hover:underline cursor-pointer">
+              <h1>Documentation and Information Services and Resources (SRDI)</h1>
+            </div>
+            <div class="sm:col-start-5 sm:row-start-5 text-white hover:underline cursor-pointer">
+              <h1>SIGARRA U.Porto</h1>
+            </div>
+          </div>
+      
+          <!-- Separator Line -->
+          <div class="border-b border-gray-400 my-6"></div>
+      
+          <!-- Flex Section -->
+          <div class="flex flex-col text-white sm:flex-row sm:justify-between pt-8">
+            <div class="flex gap-4 text-lg">
+              <i class="fas fa-newspaper"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-x-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="mt-4 sm:mt-0">
+              <h1>Contacts</h1>
+              <p class="pt-2">Reitoria da Universidade do Porto</p>
+              <div class="pt-3">
                 <p>Praça Gomes Teixeira</p>
                 <p>4099-002 Porto, Portugal</p>
-            </div>
-            <div class="pt-3">
+              </div>
+              <div class="pt-3">
                 <p>Tel.: (+351) 220 408 000</p>
                 <p>E-mail: up@up.pt</p>
+              </div>
             </div>
-        </div>
-
-    </div>
-
-    <div class="text-white flex flex-col pt-8 sm:pt-0 sm:flex-row gap-4">
-        <h1>© University of Porto 2024 </h1>
-        <h1 class="hover:underline cursor-pointer">Personal Data Protection </h1>
-        <h1 class="hover:underline cursor-pointer">Privacy Policy </h1>
-        <h1 class="hover:underline cursor-pointer">Accessibility</h1>
-    </div>
-</div>
-
+          </div>
+      
+          <!-- Footer -->
+          <div class="flex flex-col sm:flex-row justify-between text-white mt-8">
+            <h1>© University of Porto 2024</h1>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4 sm:mt-0">
+              <h1 class="hover:underline cursor-pointer">Personal Data Protection</h1>
+              <h1 class="hover:underline cursor-pointer">Privacy Policy</h1>
+              <h1 class="hover:underline cursor-pointer">Accessibility</h1>
+            </div>
 
 </div>
 
