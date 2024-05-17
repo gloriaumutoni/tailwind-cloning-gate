@@ -819,6 +819,14 @@ video {
   height: 2rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .w-\[64\%\] {
   width: 64%;
 }
@@ -861,6 +869,10 @@ video {
 
 .w-\[40px\] {
   width: 40px;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-\[1440px\] {
@@ -1164,6 +1176,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.fill-current {
+  fill: currentColor;
 }
 
 .p-2 {
@@ -1496,6 +1512,11 @@ video {
 .text-\[\#ca4646\] {
   --tw-text-opacity: 1;
   color: rgb(202 70 70 / var(--tw-text-opacity));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .underline {
