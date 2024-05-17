@@ -41,32 +41,34 @@
 
 
 <!-- nav2 -->
-<div class="bg-[#D5D5D5] py-6 sticky top-0" >
+<div class="bg-[#D5D5D5] flex items-center justify-between px-4 lg:px-20 py-6 sticky top-0" >
     
-    <div class="lg:w-[85%] w-full mx-auto flex px-20 gap-10 items-center">
+    <!-- <div class="flex  gap-10 items-center"> -->
 
-        <div class="flex gap-4 lg:hidden justify-between">
-            <i class=" text-2xl lg:hidden fa-light fa-bars"></i>
-            <img class="h-8 lg:h-10" src="./src/logo.svg" alt="">
-            <div class="flex gap-4 ">
-                <i class="text-2xl lg:hidden fa-solid fa-bars-sort"></i>
+        <div class="flex gap-4 justify-between">
+            <div class="lg:hidden  flex">
+                <i class=" text-2xl fa-light fa-bars"></i>
             </div>
-           
+            <img class="h-8 lg:h-10" src="./src/logo.svg" alt="">
         </div>
     
-        <img class="hidden lg:block h-10" src="./src/logo.svg" alt="">
+        <!-- <img class="hidden lg:block h-10" src="./src/logo.svg" alt=""> -->
         <div class="hidden lg:font-bold lg:text-xl lg:flex gap-10">
             <h1>STUDY</h1>
             <h1>RESEARCH</h1>
             <h1>INNOVATE</h1>
             <h1>LIVE</h1>
             <h1>EXPLORE</h1>
+            <div class="hidden lg:flex border-b gap-6 items-center border-black">
+                <p class="text-sm">Search</p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="gap-4 lg:hidden flex">
+                <i class="text-2xl fa-solid fa-ellipsis-vertical"></i>
+            </div>
         </div>
-        <div class="hidden lg:flex border-b gap-6 items-center border-black">
-            <p>Search</p>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </div>
+       
+    <!-- </div> -->
 
 </div>
 
